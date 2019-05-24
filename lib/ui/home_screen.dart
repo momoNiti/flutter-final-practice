@@ -41,6 +41,14 @@ class HomeScreenState extends State<HomeScreen> {
               Navigator.of(context).pushNamed('profile');
             },
           ),
+          RaisedButton(
+            child: Text("LOGOUT"),
+            onPressed: () {
+              SharedPreferencesUtil.saveLastLogin(null);
+              SharedPreferencesUtil.saveQuote(null);
+              Navigator.of(context).pushNamed('login');
+            },
+          ),
         ],
       ),
     );

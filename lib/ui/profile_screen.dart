@@ -90,8 +90,6 @@ class ProfileScreenState extends State<ProfileScreen> {
                             child: Text("Save"),
                             onPressed: () {
                               if (_formkey.currentState.validate()) {
-                                print("hello");
-                                print(account.id);
                                 db.update(
                                   Account(
                                     id: account.id,
