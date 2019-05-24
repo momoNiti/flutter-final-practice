@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_final_practice/ui/home_screen.dart';
 import 'package:flutter_final_practice/ui/login_screen.dart';
 import 'package:flutter_final_practice/ui/register_screen.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       initialRoute: "login",
       routes: {
         'login': (context) => LoginScreen(),
-        'register': (context) => RegisterScreen()
+        'register': (context) => RegisterScreen(),
       }
     );
   }
