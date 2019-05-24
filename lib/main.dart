@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_final_practice/ui/friends_screen.dart';
 import 'package:flutter_final_practice/ui/home_screen.dart';
 import 'package:flutter_final_practice/ui/login_screen.dart';
 import 'package:flutter_final_practice/ui/profile_screen.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         'login': (context) => LoginScreen(),
         'register': (context) => RegisterScreen(),
         'profile': (context) => ProfileScreen(),
+        'friends': (context) => FriendsScreen(),
       }
     );
   }

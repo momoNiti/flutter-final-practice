@@ -42,6 +42,12 @@ class HomeScreenState extends State<HomeScreen> {
             },
           ),
           RaisedButton(
+            child: Text("FRIENDS"),
+            onPressed: () {
+              Navigator.of(context).pushNamed('friends');
+            },
+          ),
+          RaisedButton(
             child: Text("LOGOUT"),
             onPressed: () {
               SharedPreferencesUtil.saveLastLogin(null);
