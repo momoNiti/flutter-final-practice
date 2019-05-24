@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_final_practice/ui/home_screen.dart';
 import 'package:flutter_final_practice/ui/login_screen.dart';
+import 'package:flutter_final_practice/ui/profile_screen.dart';
 import 'package:flutter_final_practice/ui/register_screen.dart';
 
 
@@ -15,10 +16,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xfff06292),
       ),
-      initialRoute: "login",
+      initialRoute: "profile",
       routes: {
         'login': (context) => LoginScreen(),
         'register': (context) => RegisterScreen(),
+        'profile': (context) => ProfileScreen(),
       }
     );
   }

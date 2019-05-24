@@ -28,7 +28,8 @@ class Account {
     return map;
   }
 
-  Account({String userName, String name, int age, String password}){
+  Account({int id, String userName, String name, int age, String password}){
+    this.id = id;
     this.userName = userName;
     this.name = name;
     this.age = age;
