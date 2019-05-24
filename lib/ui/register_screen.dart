@@ -87,7 +87,6 @@ class RegisterScreenState extends State<RegisterScreen> {
                       child: Text("Register"),
                       onPressed: () {
                         if (_formkey.currentState.validate()) {
-                          print(userNameController.text);
                           db
                               .insert(
                             Account(

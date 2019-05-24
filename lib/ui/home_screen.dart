@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_final_practice/util/account.dart';
+import 'package:flutter_final_practice/util/sharepref.dart';
 class HomeScreen extends StatefulWidget{
   final Account account;
   HomeScreen(this.account);
@@ -15,9 +16,13 @@ class HomeScreenState extends State<HomeScreen>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Home"),),
-      body: Container(
-        child: Text(widget.account.name),
-      )
+      body: ListView(
+        children: <Widget>[
+          Center(
+            child: Text(widget.account.name),
+          ),
+        ],
+      ),
     );
   }
 
